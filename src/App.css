@@ -107,3 +107,91 @@
     gap: 16px;
   }
 }
+
+
+/* 카드 안의 입력 영역 */
+.roommate-card > div:not(.avatar) {
+  margin-top: 20px;
+}
+
+/* 입력창 설명 */
+.roommate-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* 예정 종류 선택창과 날짜·시간 입력창 */
+.roommate-card select,
+.roommate-card input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #243047;
+  font: inherit;
+}
+
+/* 입력창 선택 시 */
+.roommate-card select:focus,
+.roommate-card input:focus {
+  border-color: #5265d8;
+  outline: 3px solid #5265d830;
+}
+
+/* 버튼 공통 디자인 */
+.roommate-card button {
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #5265d8;
+  color: #ffffff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 저장 버튼 옆의 예정 취소 버튼 */
+.roommate-card button + button {
+  margin-left: 8px;
+  background: #fff0f0;
+  color: #b82c35;
+}
+
+/* 누를 수 있는 버튼에 마우스를 올렸을 때 */
+.roommate-card button:hover:not(:disabled) {
+  filter: brightness(0.94);
+}
+
+/* 키보드로 버튼을 선택했을 때 */
+.roommate-card button:focus-visible {
+  outline: 3px solid #5265d8;
+  outline-offset: 3px;
+}
+
+/* 비활성화된 버튼 */
+.roommate-card button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* 저장된 예정 정보 */
+.roommate-card > div:not(.avatar) > p {
+  margin: 20px 0 0;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f5f7fb;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
